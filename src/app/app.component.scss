@@ -1,0 +1,68 @@
+.main-container {
+
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    width: 100vw;
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+        height: 100vh;
+        z-index: 999999;
+        overflow: hidden;
+        overflow: hidden;
+    }
+    h6 {
+        font-size:3rem;
+        margin: 0;
+        z-index: 999;
+    }
+    h2 {
+        margin: 0;
+        font-size: 6rem;
+        z-index: 999;
+    }
+    .teef-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        z-index: 999;
+    }
+}
+.food {
+    position: absolute;
+    width: 50px;  // Example width
+    height: 50px; // Example height
+    transition: top 0.5s; // Smooth transition for vertical movement
+    z-index: 1;
+}
+
+.fish {
+    position: absolute;
+    transition: transform 2s ease, left 2s ease, top 2s ease; /* Smooth and unified transition */
+    z-index: 1;
+}
+
+  .fish {
+    height: 180px;
+    width: 180px;
+  }
+  .food {
+    height: 50px;
+    width: 50px;
+  }
+  .fish {
+    transition: left 0.5s linear, top 0.5s linear, transform 0.5s ease;
+}
+
+@media only screen and (max-width: 700px) {
+    .fish {
+        height: 100px;
+        width: 100px;
+    }
+    .teef-buttons {
+
+    }
+}
